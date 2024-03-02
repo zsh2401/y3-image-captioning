@@ -21,16 +21,18 @@ attention_dim = 512  # dimension of attention linear layers
 decoder_dim = 512  # dimension of decoder RNN
 dropout = 0.5
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")  # sets device for model and PyTorch tensors
+print(f"using device {device}")
 cudnn.benchmark = True  # set to true only if inputs to model are fixed size; otherwise lot of computational overhead
 
 # Training parameters
 start_epoch = 0
 epochs = 120  # number of epochs to train for (if early stopping is not triggered)
 epochs_since_improvement = 0  # keeps track of number of epochs since there's been an improvement in validation BLEU
-batch_size = 32
+# HPC的集群可以跑更大的batch size，所以就用更大的
+batch_size = 256
 
 # Mar 3, 2024 张顺泓：修改为0能够使得数据被跑起来。
-workers = 0  # for data-loading; right now, only 1 works with h5py
+workers = 1  # for data-loading; right now, only 1 works with h5py
 
 encoder_lr = 1e-4  # learning rate for encoder if fine-tuning
 decoder_lr = 4e-4  # learning rate for decoder
@@ -88,8 +90,8 @@ def main():
 
     # Mar 4, 2024
     # 为并行计算做准备
-    decoder = DataParallel(decoder)
-    encoder = DataParallel(encoder)
+    # decoder = DataParallel(decoder)
+    # encoder = DataParallel(encoder)
 
     # Loss function
     criterion = nn.CrossEntropyLoss().to(device)
