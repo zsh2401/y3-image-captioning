@@ -27,7 +27,8 @@ start_epoch = 0
 epochs = 120  # number of epochs to train for (if early stopping is not triggered)
 epochs_since_improvement = 0  # keeps track of number of epochs since there's been an improvement in validation BLEU
 batch_size = 32
-workers = 1  # for data-loading; right now, only 1 works with h5py
+# Mar 3, 2024 张顺泓：修改为1能够使得数据被跑起来。
+workers = 0  # for data-loading; right now, only 1 works with h5py
 encoder_lr = 1e-4  # learning rate for encoder if fine-tuning
 decoder_lr = 4e-4  # learning rate for decoder
 grad_clip = 5.  # clip gradients at an absolute value of
@@ -176,8 +177,14 @@ def train(train_loader, encoder, decoder, criterion, encoder_optimizer, decoder_
 
         # Remove timesteps that we didn't decode at, or are pads
         # pack_padded_sequence is an easy trick to do this
-        scores, _ = pack_padded_sequence(scores, decode_lengths, batch_first=True)
-        targets, _ = pack_padded_sequence(targets, decode_lengths, batch_first=True)
+        # scores, _ = pack_padded_sequence(scores, decode_lengths, batch_first=True)
+        # targets, _ = pack_padded_sequence(targets, decode_lengths, batch_first=True)
+
+        # Mar 2, 2024 张顺泓：
+        # 似乎是依赖库升级的原因，返回值的.data才是可用的tensor数据。
+        scores = pack_padded_sequence(scores, decode_lengths, batch_first=True).data
+        targets = pack_padded_sequence(targets, decode_lengths, batch_first=True).data
+
 
         # Calculate loss
         loss = criterion(scores, targets)
