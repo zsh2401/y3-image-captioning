@@ -4,6 +4,7 @@ import torch.optim
 import torch.utils.data
 import torchvision.transforms as transforms
 from torch import nn
+from torch.nn import DataParallel
 from torch.nn.utils.rnn import pack_padded_sequence
 from models import Encoder, DecoderWithAttention
 from datasets import *
@@ -27,8 +28,10 @@ start_epoch = 0
 epochs = 120  # number of epochs to train for (if early stopping is not triggered)
 epochs_since_improvement = 0  # keeps track of number of epochs since there's been an improvement in validation BLEU
 batch_size = 32
-# Mar 3, 2024 张顺泓：修改为1能够使得数据被跑起来。
+
+# Mar 3, 2024 张顺泓：修改为0能够使得数据被跑起来。
 workers = 0  # for data-loading; right now, only 1 works with h5py
+
 encoder_lr = 1e-4  # learning rate for encoder if fine-tuning
 decoder_lr = 4e-4  # learning rate for decoder
 grad_clip = 5.  # clip gradients at an absolute value of
@@ -83,15 +86,24 @@ def main():
     decoder = decoder.to(device)
     encoder = encoder.to(device)
 
+    # Mar 4, 2024
+    # 为并行计算做准备
+    decoder = DataParallel(decoder)
+    encoder = DataParallel(encoder)
+
     # Loss function
     criterion = nn.CrossEntropyLoss().to(device)
 
     # Custom dataloaders
     normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406],
                                      std=[0.229, 0.224, 0.225])
+
+    # 训练集加载器
     train_loader = torch.utils.data.DataLoader(
         CaptionDataset(data_folder, data_name, 'TRAIN', transform=transforms.Compose([normalize])),
         batch_size=batch_size, shuffle=True, num_workers=workers, pin_memory=True)
+
+    # 验证集加载器
     val_loader = torch.utils.data.DataLoader(
         CaptionDataset(data_folder, data_name, 'VAL', transform=transforms.Compose([normalize])),
         batch_size=batch_size, shuffle=True, num_workers=workers, pin_memory=True)
