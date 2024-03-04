@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3a14063-2d37-45b9-b4c6-c0fa080ed1fe" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NOTE.md" beforeDir="false" afterPath="$PROJECT_DIR$/NOTE.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +51,7 @@
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" show_stripe_button="false" />
       <window_info id="Learn" show_stripe_button="false" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33020833" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21284723" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -62,8 +62,8 @@
       <window_info anchor="bottom" id="Python Console" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems View" order="2" weight="0.45279503" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.43221393" />
-      <window_info anchor="bottom" id="Services" order="4" weight="0.32981366" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.38495025" />
+      <window_info anchor="bottom" id="Services" order="4" weight="0.43221393" />
       <window_info anchor="right" id="Plots" show_stripe_button="false" />
       <window_info anchor="right" id="Endpoints" show_stripe_button="false" />
       <window_info anchor="right" id="Coverage" side_tool="true" />
@@ -118,7 +118,7 @@
       <option name="presentableId" value="Default" />
       <updated>1709301778641</updated>
       <workItem from="1709301779800" duration="7193000" />
-      <workItem from="1709383161823" duration="1378000" />
+      <workItem from="1709383161823" duration="1691000" />
     </task>
     <servers />
   </component>

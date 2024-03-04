@@ -84,16 +84,16 @@ def main():
             encoder_optimizer = torch.optim.Adam(params=filter(lambda p: p.requires_grad, encoder.parameters()),
                                                  lr=encoder_lr)
 
-    # # Mar 4, 2024
-    # # 为并行计算做准备
-    # decoder = DataParallel(decoder)
-    # encoder = DataParallel(encoder)
+
 
     # Move to GPU, if available
     decoder = decoder.to(device)
     encoder = encoder.to(device)
 
-
+    # Mar 4, 2024
+    # 为并行计算做准备
+    decoder = DataParallel(decoder)
+    encoder = DataParallel(encoder)
 
     # Loss function
     criterion = nn.CrossEntropyLoss().to(device)
