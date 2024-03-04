@@ -29,7 +29,7 @@ start_epoch = 0
 epochs = 120  # number of epochs to train for (if early stopping is not triggered)
 epochs_since_improvement = 0  # keeps track of number of epochs since there's been an improvement in validation BLEU
 # HPC的集群可以跑更大的batch size，所以就用更大的
-batch_size = 512
+batch_size = 128
 
 # Mar 3, 2024 张顺泓：修改为0能够使得数据被跑起来。
 workers = 1  # for data-loading; right now, only 1 works with h5py
@@ -84,8 +84,8 @@ def main():
             encoder_optimizer = torch.optim.Adam(params=filter(lambda p: p.requires_grad, encoder.parameters()),
                                                  lr=encoder_lr)
 
-    # Mar 4, 2024
-    # 为并行计算做准备
+    # # Mar 4, 2024
+    # # 为并行计算做准备
     # decoder = DataParallel(decoder)
     # encoder = DataParallel(encoder)
 

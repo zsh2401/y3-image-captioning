@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3a14063-2d37-45b9-b4c6-c0fa080ed1fe" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
     </list>
@@ -61,7 +62,7 @@
       <window_info anchor="bottom" id="Python Console" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems View" order="2" weight="0.45279503" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.46397516" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.43221393" />
       <window_info anchor="bottom" id="Services" order="4" weight="0.32981366" />
       <window_info anchor="right" id="Plots" show_stripe_button="false" />
       <window_info anchor="right" id="Endpoints" show_stripe_button="false" />
