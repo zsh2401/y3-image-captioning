@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3a14063-2d37-45b9-b4c6-c0fa080ed1fe" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/infer.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NOTE.md" beforeDir="false" afterPath="$PROJECT_DIR$/NOTE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caption.py" beforeDir="false" afterPath="$PROJECT_DIR$/caption.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +54,7 @@
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" show_stripe_button="false" />
       <window_info id="Learn" show_stripe_button="false" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21284723" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3454861" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -60,20 +63,22 @@
       <window_info anchor="bottom" id="TODO" show_stripe_button="false" />
       <window_info anchor="bottom" id="File Transfer" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Problems View" order="2" weight="0.45279503" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.38495025" />
-      <window_info anchor="bottom" id="Services" order="4" weight="0.43221393" />
+      <window_info anchor="bottom" id="Problems View" order="1" weight="0.45279503" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.43097013" />
+      <window_info anchor="bottom" id="Services" order="3" weight="0.43221393" />
       <window_info anchor="right" id="Plots" show_stripe_button="false" />
       <window_info anchor="right" id="Endpoints" show_stripe_button="false" />
       <window_info anchor="right" id="Coverage" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
-      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.33020833" />
       <window_info anchor="right" id="Database" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/checkpoints" />
       <recent name="$PROJECT_DIR$/dataset" />
     </key>
   </component>
@@ -118,7 +123,8 @@
       <option name="presentableId" value="Default" />
       <updated>1709301778641</updated>
       <workItem from="1709301779800" duration="7193000" />
-      <workItem from="1709383161823" duration="1691000" />
+      <workItem from="1709383161823" duration="4657000" />
+      <workItem from="1709632030508" duration="1199000" />
     </task>
     <servers />
   </component>
