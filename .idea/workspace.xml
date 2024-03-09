@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3a14063-2d37-45b9-b4c6-c0fa080ed1fe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/infer.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/caption.py" beforeDir="false" afterPath="$PROJECT_DIR$/caption.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eval.py" beforeDir="false" afterPath="$PROJECT_DIR$/eval.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infer.sh" beforeDir="false" afterPath="$PROJECT_DIR$/infer.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +64,7 @@
       <window_info anchor="bottom" id="Find" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems View" order="1" weight="0.45279503" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.43097013" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.3016169" />
       <window_info anchor="bottom" id="Services" order="3" weight="0.43221393" />
       <window_info anchor="right" id="Plots" show_stripe_button="false" />
       <window_info anchor="right" id="Endpoints" show_stripe_button="false" />
@@ -125,6 +123,7 @@
       <workItem from="1709301779800" duration="7193000" />
       <workItem from="1709383161823" duration="4657000" />
       <workItem from="1709632030508" duration="1199000" />
+      <workItem from="1709650587986" duration="888000" />
     </task>
     <servers />
   </component>
