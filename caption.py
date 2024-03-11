@@ -177,9 +177,8 @@ def visualize_att(image_path, seq, alphas, rev_word_map, smooth=True):
 
     words = [rev_word_map[ind] for ind in seq]
 
-    print(seq)
-
-    print("Inference is done: " + " ".join(words[1:-1]))
+    sentence = " ".join(words[1:-1])
+    print("Inference is done: " + sentence)
 
     for t in range(len(words)):
         if t > 50:
@@ -200,6 +199,9 @@ def visualize_att(image_path, seq, alphas, rev_word_map, smooth=True):
         plt.set_cmap(cm.Greys_r)
         plt.axis('off')
     plt.show()
+
+
+
 
 
 if __name__ == '__main__':
