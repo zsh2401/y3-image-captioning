@@ -2,6 +2,7 @@
 # 纯粹的推理函数，不包含任何额外的信息
 # Mar 11, 2024
 # Seymour Zhang
+from time import sleep
 import torch
 import json
 from PIL import Image
@@ -16,12 +17,13 @@ def create_infer_fn(device, word_map_path, model, beam_size):
     checkpoint = torch.load(model, map_location=str(device))
     decoder = checkpoint['decoder']
     decoder = decoder.to(device)
+    print("decoder loaded")
     decoder.eval()
     encoder = checkpoint['encoder']
     encoder = encoder.to(device)
     encoder.eval()
-    print("Model loaded")
-
+    print("encoder loaded")
+    # sleep(100)
     # Load word map (word2ix)
     with open(word_map_path, 'r') as j:
         word_map = json.load(j)
@@ -31,7 +33,7 @@ def create_infer_fn(device, word_map_path, model, beam_size):
         result = {}
 
         for image_path in images:
-            seq, alphas = caption_image_beam_search(encoder, decoder, image_path, word_map, beam_size)
+            seq, alphas = caption_image_beam_search(encoder, decoder, image_path, word_map, beam_size,device)
             words = [rev_word_map[ind] for ind in seq]
             sentence = " ".join(words[1:-1])
             result[image_path] = sentence

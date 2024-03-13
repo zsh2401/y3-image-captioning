@@ -5,3 +5,5 @@ __pycache__
 *.tar
 *.pth
 checkpoints
+res.json
+gts.json
