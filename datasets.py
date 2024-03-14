@@ -10,7 +10,7 @@ class CaptionDataset(Dataset):
     A PyTorch Dataset class to be used in a PyTorch DataLoader to create batches.
     """
 
-    def __init__(self, data_folder, data_name, split, transform=None):
+    def __init__(self, data_folder, data_name, split, transform=None,with_path=False):
         """
         :param data_folder: folder where data files are stored
         :param data_name: base name of processed datasets
@@ -18,6 +18,7 @@ class CaptionDataset(Dataset):
         :param transform: image transform pipeline
         """
         self.split = split
+        self.with_path=with_path
         assert self.split in {'TRAIN', 'VAL', 'TEST'}
 
         # Open hdf5 file where images are stored
