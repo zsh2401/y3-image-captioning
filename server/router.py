@@ -1,13 +1,13 @@
 from flask import send_from_directory
 import os
+
+from server.apis import init_apis
 front_end_dist = os.getcwd() +"/front-end/dist"
 
 def init_router(app):
-    apis(app)
+    init_apis(app)
     spa(app)
-    
-def apis(app):
-    pass
+
 
 def spa(app):
     @app.route('/', defaults={'path': ''})
