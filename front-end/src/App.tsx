@@ -1,11 +1,14 @@
-import { useState } from 'react'
 import { Router } from "./Router"
-import './App.css'
+import { AppLayout } from "./layouts/AppLayout"
 import { EventProvider } from 'sz-react-support'
+
+import "./App.css"
 
 function App() {
   return <EventProvider>
-    <Router />
+    <AppLayout>
+      <Router />
+    </AppLayout>
   </EventProvider>
 }
 

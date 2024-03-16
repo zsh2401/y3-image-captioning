@@ -9,3 +9,6 @@ export function login(userName: string, password: string): Promise<AuthInfo> {
 export function register(userName: string, password: string): Promise<AuthInfo> {
     throw new Error()
 }
+export function stillAlive(accessToken:string):Promise<boolean>{
+    
+}
