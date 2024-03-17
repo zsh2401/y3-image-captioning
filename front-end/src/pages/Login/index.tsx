@@ -1,6 +1,6 @@
 import { Button, Divider, Form, Input } from "antd"
-import { register } from "../../apis/auth"
-import { useCallback } from "react"
+import { useCallback } from "react";
+import { login } from "../../apis/auth";
 import { useAuthState } from "../../hooks/useAuthState";
 import { useNavigate } from "react-router-dom";
 import { sleep } from "sz-react-support";
@@ -8,9 +8,8 @@ import { sleep } from "sz-react-support";
 type FormStructure = {
     username?: string;
     password?: string;
-    passwordAgain?: string
 };
-export function Register() {
+export function Login() {
 
     const navigate = useNavigate()
     const [, setAuth] = useAuthState()
@@ -19,7 +18,7 @@ export function Register() {
         if (!values.username || !values.password) {
             return
         }
-        const authInfo = await register(values.username, values.password)
+        const authInfo = await login(values.username, values.password)
         setAuth(authInfo)
         sleep(500).then(() => {
             navigate("/infer")
@@ -30,6 +29,7 @@ export function Register() {
 
     }, [])
 
+    
     return <div>
         <Form
             name="basic"
@@ -61,8 +61,8 @@ export function Register() {
                 <Button htmlType="submit">
                     登录
                 </Button>
-                <Divider type="vertical" />
-                <Button type="primary" onClick={() => {
+                <Divider type="vertical"/>
+                <Button type="primary" onClick={()=>{
                     navigate("/register")
                 }}>
                     注册

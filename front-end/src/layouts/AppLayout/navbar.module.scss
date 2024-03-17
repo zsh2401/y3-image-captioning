@@ -17,4 +17,14 @@
             border-radius: 10px;
         }
     }
+    .right{
+        display: flex;
+        flex-direction: row;
+        .user{
+            
+        }
+        .menu{
+            // vertical-align: bottom;
+        }
+    }
 }

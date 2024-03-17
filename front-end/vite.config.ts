@@ -6,7 +6,18 @@ export default defineConfig({
   plugins: [react()],
   css: {
     modules: {
-        localsConvention: 'camelCase',
+      localsConvention: 'camelCase',
     },
-},
+  },
+  server: {
+    proxy: {
+      //配置跨域
+      '/api': {
+        target: 'http://127.0.0.1:9008',
+        changeOrigin: true, //允许跨域
+        // rewrite: (path) => path.replace('/api', ''),
+        timeout: 6 * 60 * 1000,
+      },
+    },
+  }
 })

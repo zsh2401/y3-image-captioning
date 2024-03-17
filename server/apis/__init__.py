@@ -1,15 +1,8 @@
 from flask import jsonify, request
+from server.apis.auth import register_auth_apis
+from server.apis.infer import register_infer_apis
 
 
 def init_apis(app):
-    
-    @app.route('/api/infer', methods=['POST'])
-    def infer():
-        # 获取表单数据
-        image = request.form.get('image')
-        
-        # 处理表单数据...
-        
-        return jsonify({
-            "image":"abc"
-        })
+    register_auth_apis(app)
+    register_infer_apis(app)

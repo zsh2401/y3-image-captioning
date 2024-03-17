@@ -5,9 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3a14063-2d37-45b9-b4c6-c0fa080ed1fe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/infer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/apis/scheme.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/db/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/db/conn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/opts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/caption.py" beforeDir="false" afterPath="$PROJECT_DIR$/caption.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/Router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/Router.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/apis/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/apis/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/hooks/usePXState.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/hooks/usePXState.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/layouts/AppLayout/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/layouts/AppLayout/NavBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/layouts/AppLayout/navbar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/layouts/AppLayout/navbar.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/pages/Infer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/pages/Infer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/pages/Register/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/pages/Register/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infer.py" beforeDir="false" afterPath="$PROJECT_DIR$/infer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/apis/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/apis/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/apis/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/apis/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/apis/infer.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/apis/infer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/run.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +50,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python.server.executor&quot;: &quot;Debug&quot;,
     &quot;Python.train.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -79,7 +100,31 @@
       <recent name="$PROJECT_DIR$/dataset" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.server">
+    <configuration name="server" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="caption" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="y3" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="train" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="caption" />
       <option name="ENV_FILES" value="" />
@@ -89,6 +134,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="y3" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -103,11 +149,15 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.train" />
+      <item itemvalue="Python.server" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95" />
+        <option value="bundled-python-sdk-d68999036c7f-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.14475.56" />
       </set>
     </attachedChunks>
   </component>
@@ -124,6 +174,8 @@
       <workItem from="1709632030508" duration="1199000" />
       <workItem from="1709650587986" duration="1596000" />
       <workItem from="1710142973687" duration="1189000" />
+      <workItem from="1710574491015" duration="2942000" />
+      <workItem from="1710590152976" duration="5411000" />
     </task>
     <servers />
   </component>
@@ -132,5 +184,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/y3_image_captioning$train.coverage" NAME="train Coverage Results" MODIFIED="1709370099487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/y3_image_captioning$server.coverage" NAME="server Coverage Results" MODIFIED="1710597528573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

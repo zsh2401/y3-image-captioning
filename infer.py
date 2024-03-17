@@ -30,13 +30,13 @@ def create_infer_fn(device, word_map_path, model, beam_size):
     rev_word_map = {v: k for k, v in word_map.items()}  # ix2word
 
     def bat_infer(images):
-        result = {}
+        result = []
 
         for image_path in images:
             seq, alphas = caption_image_beam_search(encoder, decoder, image_path, word_map, beam_size,device)
             words = [rev_word_map[ind] for ind in seq]
             sentence = " ".join(words[1:-1])
-            result[image_path] = sentence
+            result.append([sentence])
 
         return result
 

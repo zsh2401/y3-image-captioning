@@ -1,14 +1,36 @@
+import { getAccessToken, must } from "./support"
 export interface AuthInfo {
     accessToken: string
-    userName: string
+    id:number
+    username: string
 }
 
-export function login(userName: string, password: string): Promise<AuthInfo> {
-    throw new Error()
+export async function login(username: string, password: string): Promise<AuthInfo> {
+    return must(await fetch("/api/login", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            username, password
+        })
+    }))
 }
-export function register(userName: string, password: string): Promise<AuthInfo> {
-    throw new Error()
+export async function register(username: string, password: string): Promise<AuthInfo> {
+    return must(await fetch("/api/alive", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            username, password
+        })
+    }))
 }
-export function stillAlive(accessToken:string):Promise<boolean>{
-    
+export async function stillAlive(): Promise<boolean> {
+    return must(await fetch("/api/alive", {
+        headers: {
+            "X-Access-Token": await getAccessToken()
+        }
+    }))
 }
