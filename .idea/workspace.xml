@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3a14063-2d37-45b9-b4c6-c0fa080ed1fe" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/apis/infer.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/apis/infer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/opts.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/opts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/apis/infer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/apis/infer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/pages/Infer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/pages/Infer/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +154,7 @@
       <workItem from="1709650587986" duration="1596000" />
       <workItem from="1710142973687" duration="1189000" />
       <workItem from="1710574491015" duration="2942000" />
-      <workItem from="1710590152976" duration="5675000" />
+      <workItem from="1710590152976" duration="6421000" />
     </task>
     <servers />
   </component>
@@ -164,6 +163,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/y3_image_captioning$train.coverage" NAME="train Coverage Results" MODIFIED="1709370099487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/y3_image_captioning$server.coverage" NAME="server Coverage Results" MODIFIED="1710597528573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/y3_image_captioning$server.coverage" NAME="server Coverage Results" MODIFIED="1710664890505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
