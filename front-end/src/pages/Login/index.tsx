@@ -4,7 +4,8 @@ import { login } from "../../apis/auth";
 import { useAuthState } from "../../hooks/useAuthState";
 import { useNavigate } from "react-router-dom";
 import { sleep } from "sz-react-support";
-
+import css from "./index.module.scss"
+import { APP_CHN_NAME } from "../../constants";
 type FormStructure = {
     username?: string;
     password?: string;
@@ -29,8 +30,9 @@ export function Login() {
 
     }, [])
 
-    
-    return <div>
+
+    return <div className={css.login}>
+        <h1>登录到{APP_CHN_NAME}</h1>
         <Form
             name="basic"
             labelCol={{ span: 8 }}
@@ -42,7 +44,7 @@ export function Login() {
             autoComplete="off"
         >
             <Form.Item<FormStructure>
-                label="Username"
+                label="用户名"
                 name="username"
                 rules={[{ required: true, message: 'Please input your username!' }]}
             >
@@ -50,7 +52,7 @@ export function Login() {
             </Form.Item>
 
             <Form.Item<FormStructure>
-                label="Password"
+                label="密码"
                 name="password"
                 rules={[{ required: true, message: 'Please input your password!' }]}
             >
@@ -58,14 +60,14 @@ export function Login() {
             </Form.Item>
 
             <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-                <Button htmlType="submit">
+                <Button type="primary" htmlType="submit">
                     登录
                 </Button>
-                <Divider type="vertical"/>
-                <Button type="primary" onClick={()=>{
+                <Divider type="vertical" />
+                <Button onClick={() => {
                     navigate("/register")
                 }}>
-                    注册
+                    没有账号？立刻注册
                 </Button>
             </Form.Item>
         </Form>

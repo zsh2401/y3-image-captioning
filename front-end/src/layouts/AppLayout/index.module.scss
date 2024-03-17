@@ -1,5 +1,19 @@
-.app-layout{
-    height: 100%;
-    width: 100%;   
-    background-color: whitesmoke;
+.app-layout {
+    min-height: 100%;
+    width: 100%;
+    // background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+
+    .body {
+        flex-grow: 1;
+    }
+
+    .footer {
+        flex-grow: 0;
+        text-align: center;
+        color: var(--color-text-secondary);
+        margin: 10px 0px 10px 0px;
+        font-size: smaller;
+    }
 }

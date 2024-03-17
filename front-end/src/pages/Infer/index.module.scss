@@ -1,0 +1,31 @@
+.infer-wrapper {
+
+    .tool-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 20px 10px 20px;
+        border-bottom: 1px solid gainsboro;
+    }
+
+    .tasks {
+        display: flex;
+        flex-direction: row;
+
+        .task {
+            margin: 10px;
+
+            // border: 1px solid red;
+            img {
+                height: 150px;
+            }
+
+            .caption {}
+            .prepared{
+                color: gray;
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+    }
+}

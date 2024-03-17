@@ -1,8 +1,10 @@
 import { IStdProps } from "sz-react-support"
 import { useAuthState } from "../hooks/useAuthState"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { useEffect } from "react"
 import { stillAlive } from "../apis/auth"
+import { Button } from "antd"
+
 export function Security(props: IStdProps) {
     const [s, setAuth] = useAuthState()
     useEffect(() => {
@@ -20,11 +22,19 @@ export function Security(props: IStdProps) {
         }
     }, [s, setAuth])
 
+    const navigate = useNavigate()
+
     if (s) {
         return props.children
     } else {
-        return <div>Not auth
-            <Link to="/login">注册</Link>
+        return <div style={{
+            textAlign: "center"
+        }}><div>
+                <h1 style={{ marginTop: "10vh", marginBottom: "5vh" }}>抱歉，该功能需要登录后使用</h1>
+                <Button type="primary" size="large" onClick={() => navigate("/login")}>
+                    前往登录</Button>
+                {/* <Link to="/login"></Link> */}
+            </div>
         </div>
     }
 }

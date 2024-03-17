@@ -1,17 +1,17 @@
 import { must } from "./support"
 
 export interface InferResult {
-    caption: string
+    captions: string[][]
     method: string
 }
-export async function infer(file: File, method: "y3" = "y3"): Promise<InferResult> {
+export async function infer(files: File[], method: "y3" = "y3"): Promise<InferResult> {
     const form = new FormData()
-    form.append("image", file)
+    files.forEach((file) => {
+        form.append("images", file)
+    })
     form.append("method", method)
     return must(await fetch("/api/infer", {
-        headers: {
-            "Content-Type": "form-data",
-        },
+        method:"POST",
         body: form
     }))
 }
