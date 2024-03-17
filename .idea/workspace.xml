@@ -5,29 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3a14063-2d37-45b9-b4c6-c0fa080ed1fe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/server/apis/scheme.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/db/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/db/conn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/opts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/Router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/Router.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/apis/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/apis/auth.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/hooks/usePXState.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/hooks/usePXState.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/layouts/AppLayout/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/layouts/AppLayout/NavBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/layouts/AppLayout/navbar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/layouts/AppLayout/navbar.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/pages/Infer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/pages/Infer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/pages/Register/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/pages/Register/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/vite.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infer.py" beforeDir="false" afterPath="$PROJECT_DIR$/infer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/apis/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/apis/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/apis/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/apis/auth.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/apis/infer.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/apis/infer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/opts.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/opts.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +155,7 @@
       <workItem from="1709650587986" duration="1596000" />
       <workItem from="1710142973687" duration="1189000" />
       <workItem from="1710574491015" duration="2942000" />
-      <workItem from="1710590152976" duration="5411000" />
+      <workItem from="1710590152976" duration="5675000" />
     </task>
     <servers />
   </component>
