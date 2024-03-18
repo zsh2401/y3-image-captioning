@@ -38,6 +38,7 @@ def caption_image_beam_search(encoder, decoder, image_path, word_map, beam_size=
     else:
         # Read image and process
         img = imread(image_path)
+        print(img.shape)
         if len(img.shape) == 2:
             img = img[:, :, np.newaxis]
             img = np.concatenate([img, img, img], axis=2)
@@ -48,6 +49,7 @@ def caption_image_beam_search(encoder, decoder, image_path, word_map, beam_size=
         normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406],
                                         std=[0.229, 0.224, 0.225])
         transform = transforms.Compose([normalize])
+        print(img.shape)
         image = transform(img)  # (3, 256, 256)
         # Encode
         image = image.unsqueeze(0)  # (1, 3, 256, 256)

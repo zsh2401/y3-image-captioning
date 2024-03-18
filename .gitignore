@@ -8,3 +8,4 @@ checkpoints
 res.json
 gts.json
 *.sqlite
+*.pyc

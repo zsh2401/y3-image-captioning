@@ -1,10 +1,15 @@
 from sqlalchemy import create_engine
 
 import server.db.User
-from server.db.conn import Base, Session
+from server.db.conn import Base, Session,engine
 
 
+inited = False
 def get_session():
+    global inited
+    if inited is False:
+        print("Created databases")
+        Base.metadata.create_all(engine)
     return Session()
 
 

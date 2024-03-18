@@ -33,6 +33,7 @@ def create_infer_fn(device, word_map_path, model, beam_size):
         result = []
 
         for image_path in images:
+            # print(image_path.shape)
             seq, alphas = caption_image_beam_search(encoder, decoder, image_path, word_map, beam_size,device)
             words = [rev_word_map[ind] for ind in seq]
             sentence = " ".join(words[1:-1])

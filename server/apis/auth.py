@@ -86,6 +86,7 @@ def register_auth_apis(app):
         session.close()
 
         return success({
-            "userid": new_user.id,
+            "id": new_user.id,
+            "username":new_user.username,
             "accessToken": __allocate_access_token_for(id)
         })
