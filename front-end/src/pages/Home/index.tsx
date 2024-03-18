@@ -1,4 +1,3 @@
-import { Button } from "antd";
 import { APP_CHN_NAME } from "../../constants";
 import css from "./index.module.scss"
 import { useNavigate } from "react-router-dom";

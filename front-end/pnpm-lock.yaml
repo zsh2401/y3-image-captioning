@@ -30,8 +30,8 @@ dependencies:
     specifier: ^3.2.0
     version: 3.2.0(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)
   sz-react-support:
-    specifier: ^2.5.1
-    version: 2.5.1(react@18.2.0)(vue@3.4.21)
+    specifier: ^2.5.2
+    version: 2.5.2(react@18.2.0)(vue@3.4.21)
 
 devDependencies:
   '@types/react':
@@ -1110,7 +1110,7 @@ packages:
       '@vue/shared': 3.4.21
       entities: 4.5.0
       estree-walker: 2.0.2
-      source-map-js: 1.0.2
+      source-map-js: 1.1.0
     dev: false
 
   /@vue/compiler-dom@3.4.21:
@@ -1130,8 +1130,8 @@ packages:
       '@vue/shared': 3.4.21
       estree-walker: 2.0.2
       magic-string: 0.30.8
-      postcss: 8.4.35
-      source-map-js: 1.0.2
+      postcss: 8.4.36
+      source-map-js: 1.1.0
     dev: false
 
   /@vue/compiler-ssr@3.4.21:
@@ -2099,6 +2099,16 @@ packages:
       nanoid: 3.3.7
       picocolors: 1.0.0
       source-map-js: 1.0.2
+    dev: true
+
+  /postcss@8.4.36:
+    resolution: {integrity: sha512-/n7eumA6ZjFHAsbX30yhHup/IMkOmlmvtEi7P+6RMYf+bGJSUHc3geH4a0NSZxAz/RJfiS9tooCTs9LAVYUZKw==}
+    engines: {node: ^10 || ^12 || >=14}
+    dependencies:
+      nanoid: 3.3.7
+      picocolors: 1.0.0
+      source-map-js: 1.1.0
+    dev: false
 
   /prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
@@ -2823,6 +2833,12 @@ packages:
   /source-map-js@1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /source-map-js@1.1.0:
+    resolution: {integrity: sha512-9vC2SfsJzlej6MAaMPLu8HiBSHGdRAJ9hVFYN1ibZoNkeanmDmLUcIrj6G9DGL7XMJ54AKg/G75akXl1/izTOw==}
+    engines: {node: '>=0.10.0'}
+    dev: false
 
   /string-convert@0.2.1:
     resolution: {integrity: sha512-u/1tdPl4yQnPBjnVrmdLo9gtuLvELKsAoRapekWggdiQNvvvum+jYF329d84NAa660KQw7pB2n36KrIKVoXa3A==}
@@ -2858,8 +2874,8 @@ packages:
       has-flag: 4.0.0
     dev: true
 
-  /sz-react-support@2.5.1(react@18.2.0)(vue@3.4.21):
-    resolution: {integrity: sha512-I+lCRr0GVofKe5isKEWuD3l1TxD0i24lJIyq6czPNQAcdDtwdH2fBA04NY60cKALzMjATiyDdfdnhISMCL+v+Q==}
+  /sz-react-support@2.5.2(react@18.2.0)(vue@3.4.21):
+    resolution: {integrity: sha512-xbdHE10R9hHueTFwC8BUijWFz97WoN6CEasQm8MHORVmdqakjkscfzBcQgnpg4Ht9k/VKWH42ZTlE8L4IRLfXg==}
     peerDependencies:
       react: ^16.0.0 || ^17.0.0 || ^18.0.0
     dependencies:

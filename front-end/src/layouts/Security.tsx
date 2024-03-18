@@ -1,6 +1,6 @@
 import { IStdProps } from "sz-react-support"
 import { useAuthState } from "../hooks/useAuthState"
-import { Link, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import { useEffect } from "react"
 import { stillAlive } from "../apis/auth"
 import { Button } from "antd"
@@ -11,7 +11,7 @@ export function Security(props: IStdProps) {
         let interrupted = false
         if (s) {
             (async () => {
-                const alive = await stillAlive(s.accessToken)
+                const alive = await stillAlive()
                 if (!alive && !interrupted) {
                     setAuth(null)
                 }
