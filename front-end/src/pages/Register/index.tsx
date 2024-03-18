@@ -58,14 +58,14 @@ export function Register() {
             </Form.Item>
 
             <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-                <Button htmlType="submit">
-                    登录
+                <Button type="primary" htmlType="submit">
+                    立刻注册
                 </Button>
                 <Divider type="vertical" />
-                <Button type="primary" onClick={() => {
-                    navigate("/register")
+                <Button onClick={() => {
+                    navigate("/login")
                 }}>
-                    注册
+                    前往登录
                 </Button>
             </Form.Item>
         </Form>

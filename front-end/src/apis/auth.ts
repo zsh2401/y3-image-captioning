@@ -17,7 +17,7 @@ export async function login(username: string, password: string): Promise<AuthInf
     }))
 }
 export async function register(username: string, password: string): Promise<AuthInfo> {
-    return must(await fetch("/api/alive", {
+    return must(await fetch("/api/register", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
