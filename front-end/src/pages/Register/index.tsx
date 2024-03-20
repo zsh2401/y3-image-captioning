@@ -4,6 +4,8 @@ import { useCallback } from "react"
 import { useAuthState } from "../../hooks/useAuthState";
 import { useNavigate } from "react-router-dom";
 import { sleep } from "sz-react-support";
+import css from "./index.module.scss"
+import { APP_CHN_NAME } from "../../constants";
 
 type FormStructure = {
     username?: string;
@@ -30,7 +32,8 @@ export function Register() {
 
     }, [])
 
-    return <div>
+    return <div className={css.registerWrapper}>
+        <h1 className={css.title}>注册到 {APP_CHN_NAME}</h1>
         <Form
             name="basic"
             labelCol={{ span: 8 }}
@@ -42,7 +45,7 @@ export function Register() {
             autoComplete="off"
         >
             <Form.Item<FormStructure>
-                label="Username"
+                label="用户名"
                 name="username"
                 rules={[{ required: true, message: 'Please input your username!' }]}
             >
@@ -50,11 +53,11 @@ export function Register() {
             </Form.Item>
 
             <Form.Item<FormStructure>
-                label="Password"
+                label="密码"
                 name="password"
                 rules={[{ required: true, message: 'Please input your password!' }]}
             >
-                <Input.Password />
+                <Input />
             </Form.Item>
 
             <Form.Item wrapperCol={{ offset: 8, span: 16 }}>

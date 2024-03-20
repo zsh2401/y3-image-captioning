@@ -1,7 +1,11 @@
 import { must } from "./support"
 
+export interface Caption {
+    chn: string
+    source: string
+}
 export interface InferResult {
-    captions: string[][]
+    captions: Caption[][]
     method: string
 }
 export async function infer(files: File[], method: "y3" = "y3"): Promise<InferResult> {
@@ -11,7 +15,7 @@ export async function infer(files: File[], method: "y3" = "y3"): Promise<InferRe
     })
     form.append("method", method)
     return must(await fetch("/api/infer", {
-        method:"POST",
+        method: "POST",
         body: form
     }))
 }
