@@ -6,6 +6,7 @@ from flask import request
 from infer import create_infer_fn
 from server.apis.scheme import success
 from server.opts import word_map_path, model_path, device, beam_size
+from translate.translate import translate2chn
 
 model = None
 
@@ -24,10 +25,16 @@ def register_infer_apis(app):
         
         # print("loaded")
       
-        result = model(tensors)
+        images_captions = model(tensors)
+        for i,image_captions in enumerate(images_captions):
+            for j, image_caption in enumerate(image_captions):
+                image_captions[j] = {
+                    "source":image_caption,
+                    "chn":translate2chn(image_caption)
+                }
 
         return success({
-            "captions": result,
+            "captions": images_captions,
             "method": method
         })
 
