@@ -18,7 +18,7 @@ from infer import create_infer_fn
 # Parameters
 data_folder = 'dataset/output'  # folder with data files saved by create_input_files.py
 data_name = 'coco_5_cap_per_img_5_min_word_freq'  # base name shared by data files
-checkpoint = './BEST_checkpoint_coco_5_cap_per_img_5_min_word_freq.pth.tar'  # model checkpoint
+checkpoint = './checkpoints/best.pth'  # model checkpoint
 word_map_file = 'dataset/output/WORDMAP_coco_5_cap_per_img_5_min_word_freq.json'  # word map, ensure it's the same the data was encoded with and the model was trained with
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")  # sets device for model and PyTorch tensors
 cudnn.benchmark = True  # set to true only if inputs to model are fixed size; otherwise lot of computational overhead
@@ -59,10 +59,15 @@ def main():
         image = image.to(device)
         
         caption = translate(caps[0])
-        pred = [v for v in infer([image]).values()][0]
+    
+        pred = [v for v in infer([image])][0]
         
+        # print(pred)
+            
         gts[str(i)] = [caption]
-        res[str(i)] = [pred]
+        res[str(i)] = pred
+        # if i > 100:
+        #     break
 
     print("Inference is done")
     with open("gts.json","w") as f:

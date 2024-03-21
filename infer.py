@@ -56,5 +56,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
     infer = create_infer_fn("cuda",
                               "dataset/output/WORDMAP_coco_5_cap_per_img_5_min_word_freq.json",
-                              "BEST_checkpoint_coco_5_cap_per_img_5_min_word_freq.pth.tar", 5)
+                              "checkpoints/best.pth", 5)
     print(infer(args.images))
