@@ -16,11 +16,11 @@ export function AppLayout(props: IStdProps) {
             <div className={css.body}>
                 {props.children}
             </div>
-            <div className={css.footer}>
+            {/* <div className={css.footer}>
                 - Zhao Mengmeng & Seymour Zhang -
                 <br />
                 Mar 17, 2024
-            </div>
+            </div> */}
         </div>
     </ConfigProvider>
 

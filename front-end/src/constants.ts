@@ -1,1 +1,1 @@
-export const APP_CHN_NAME = "AI标注"
+export const APP_CHN_NAME = "看图说话"
